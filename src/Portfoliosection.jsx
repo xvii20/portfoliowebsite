@@ -1,7 +1,7 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import petsy from './petsy.png';
-import weatherimg from './weatherimg.png';
+import petsy from './petsy-min.png';
+import weatherimg from './weatherimg-min.png';
 
 export default function Portfoliosection() {
   return (

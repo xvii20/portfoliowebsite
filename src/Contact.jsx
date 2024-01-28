@@ -90,10 +90,11 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
             name="contact"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            // data-netlify="true"
+            // data-netlify-honeypot="bot-field"
+            netlify
           >
-            <input type="hidden" name="form-name" value="contact" />
+            {/* <input type="hidden" name="form-name" value="contact" /> */}
 
             <div className="namelabeldiv">
               <label htmlFor="name">Name:</label>
