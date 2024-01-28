@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import SvgComponent from './githubsvg';
 import LinkedinComponent from './linkedinsvg';
 
 export default function Contact() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   console.log(location.pathname);
   // State to manage form input values
@@ -145,7 +146,14 @@ export default function Contact() {
 
             <div className="submitbuttondiv">
               {' '}
-              <button type="submit">Submit</button>{' '}
+              <button
+                type="submit"
+                onClick={() => {
+                  navigate('/');
+                }}
+              >
+                Submit
+              </button>{' '}
             </div>
           </form>
         </div>
