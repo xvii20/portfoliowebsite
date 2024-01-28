@@ -40,14 +40,6 @@ export default function Contact() {
     })
       .then(() => console.log('Form successfully submitted'))
       .catch((error) => alert(error));
-
-    // Reset form fields after submission (optional)
-    // setFormData({
-    //   name: '',
-    //   subject: '',
-    //   email: '',
-    //   message: '',
-    // });
   };
 
   return (
@@ -82,6 +74,7 @@ export default function Contact() {
           <h1 className="contactmeheader"> Contact Me </h1>
           <form
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             name="contact"
             method="post"
             onSubmit={handleSubmit}
