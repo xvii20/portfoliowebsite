@@ -219,8 +219,17 @@ body {
   display: flex;
   justify-content: center;
   gap: 35px;
+}
+
+.icondivincontactpage {
+  color: #ffffff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
   margin-bottom: 40px;
 }
+
 .githubicon {
   height: 50px;
   fill: white;

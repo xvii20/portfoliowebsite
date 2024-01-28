@@ -30,23 +30,23 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      // Send the form data to Netlify Forms
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
-      });
+    // try {
+    //   // Send the form data to Netlify Forms
+    //   const response = await fetch('/', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //     body: new URLSearchParams(formData).toString(),
+    //   });
 
-      // Check if the submission was successful
-      if (response.ok) {
-        console.log('Form submitted successfully');
-      } else {
-        console.error('Form submission failed');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+    //   // Check if the submission was successful
+    //   if (response.ok) {
+    //     console.log('Form submitted successfully');
+    //   } else {
+    //     console.error('Form submission failed');
+    //   }
+    // } catch (error) {
+    //   console.error('Error submitting form:', error);
+    // }
 
     // Reset form fields after submission (optional)
     setFormData({
@@ -65,7 +65,7 @@ export default function Contact() {
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="icondiv">
+      <div className="icondivincontactpage">
         <Link
           to="https://github.com/xvii20"
           target="_blank"
