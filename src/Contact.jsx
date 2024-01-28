@@ -30,31 +30,21 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // try {
-    //   // Send the form data to Netlify Forms
-    //   const response = await fetch('/', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //     body: new URLSearchParams(formData).toString(),
-    //   });
-
-    //   // Check if the submission was successful
-    //   if (response.ok) {
-    //     console.log('Form submitted successfully');
-    //   } else {
-    //     console.error('Form submission failed');
-    //   }
-    // } catch (error) {
-    //   console.error('Error submitting form:', error);
-    // }
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log('Form successfully submitted'))
+      .catch((error) => alert(error));
 
     // Reset form fields after submission (optional)
-    setFormData({
-      name: '',
-      subject: '',
-      email: '',
-      message: '',
-    });
+    // setFormData({
+    //   name: '',
+    //   subject: '',
+    //   email: '',
+    //   message: '',
+    // });
   };
 
   return (
@@ -90,11 +80,10 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
             name="contact"
-            // data-netlify="true"
-            // data-netlify-honeypot="bot-field"
-            netlify
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
+            <input type="hidden" name="form-name" value="contact" />
 
             <div className="namelabeldiv">
               <label htmlFor="name">Name:</label>
