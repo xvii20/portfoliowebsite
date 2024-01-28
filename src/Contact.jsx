@@ -77,7 +77,7 @@ export default function Contact() {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             name="contact"
-            action="/"
+            action="/pages/success"
             method="post"
             // onSubmit={handleSubmit}
             onSubmit="submit"
@@ -146,14 +146,7 @@ export default function Contact() {
 
             <div className="submitbuttondiv">
               {' '}
-              <button
-                type="submit"
-                onClick={() => {
-                  navigate('/');
-                }}
-              >
-                Submit
-              </button>{' '}
+              <button type="submit">Submit</button>{' '}
             </div>
           </form>
         </div>

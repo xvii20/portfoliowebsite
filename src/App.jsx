@@ -4,6 +4,7 @@ import Aboutsection from './Aboutsection';
 import Portfoliosection from './Portfoliosection';
 import Contact from './Contact';
 import Layout from './Layout';
+import Successpage from './successpage';
 import {
   BrowserRouter,
   Routes,
@@ -33,6 +34,7 @@ function Animatedroutes() {
           <Route path="/about" element={<Aboutsection />} />
           <Route path="/portfolio" element={<Portfoliosection />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pages/success" element={<Successpage />} />
         </Route>{' '}
         {/* see this self enclosing route tag?? */}
       </Routes>
