@@ -30,10 +30,13 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log(formData);
+    console.log(new URLSearchParams(formData).toString());
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
+      body: new URLSearchParams(formData).toString(), // turns the code into something like name=dwfw&subject=fwaaaa&email=ya%40yahoo.com&message=z2rfuwffwfuwfwh
     })
       .then(() => console.log('Form successfully submitted'))
       .catch((error) => alert(error));
@@ -80,8 +83,9 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
             name="contact"
-            action="/contact"
+            action="/"
             method="post"
+            data-netlify="true"
           >
             <input type="hidden" name="form-name" value="contact" />
 
