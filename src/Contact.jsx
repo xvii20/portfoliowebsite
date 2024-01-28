@@ -80,10 +80,8 @@ export default function Contact() {
           <form
             onSubmit={handleSubmit}
             name="contact"
-            action="/"
+            action="/contact"
             method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="contact" />
 
@@ -97,6 +95,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 id="name"
+                required
               />
             </div>
             <br />
@@ -112,6 +111,7 @@ export default function Contact() {
                 value={formData.subject}
                 onChange={handleChange}
                 id="subject"
+                required
               />
             </div>
             <br />
@@ -126,6 +126,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 id="email"
+                required
               />
             </div>
             <br />
@@ -139,6 +140,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 id="message"
+                required
               />
             </div>
             <br />
