@@ -81,11 +81,10 @@ export default function Contact() {
         <div className="contactform">
           <h1 className="contactmeheader"> Contact Me </h1>
           <form
-            onSubmit={handleSubmit}
-            name="contact"
-            action="/"
-            method="post"
             data-netlify="true"
+            name="contact"
+            method="post"
+            onSubmit={handleSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
 
