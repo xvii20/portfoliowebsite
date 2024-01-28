@@ -1,0 +1,561 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #121212;
+  font-family: Lato, sans-serif;
+}
+
+/* Navbar css */
+.navbar {
+  background-color: #1c1917;
+  color: #363636; /* Dark gray color for text on the navbar */
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 20px;
+}
+
+.navbarele:hover {
+  /* color: #f48fb1; Dark gray color for text on the navbar */
+  color: pink;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+}
+
+.menu span {
+  cursor: pointer;
+}
+
+.navbareleactive {
+  color: #ffffff; /* White text for contrast */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid pink; /* Pink 200 */
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbarele {
+  padding-top: 3px;
+  color: #ffffff; /* White text for contrast */
+  text-decoration: none;
+  list-style: none;
+}
+
+/* About section css */
+
+.aboutsectionparent {
+  height: 100vh;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.aboutdiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.introwrapper {
+  margin-bottom: 100px;
+  color: white;
+}
+
+.mediaintrowrapper {
+  margin-bottom: 200px;
+  color: white;
+  display: none;
+}
+
+.icons {
+  outline: 2px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.icondiv {
+  color: #ffffff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 40px;
+}
+.githubicon {
+  height: 50px;
+  fill: white;
+  cursor: pointer;
+  transition: fill 0.5s ease; /* Add a transition effect for the color property */
+}
+
+.hello {
+  margin-bottom: 30px;
+  font-size: 50px;
+  /* box-shadow: -2px -2px 30px pink; */
+}
+
+.introwrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introtext {
+  line-height: 40px;
+
+  font-size: 1.4rem;
+  word-wrap: break-word;
+}
+.longspandiv {
+  display: flex;
+  justify-content: center;
+}
+.longspan {
+  display: block;
+  width: 1000px;
+}
+
+.mediumspan {
+  width: 930px;
+
+  display: block;
+}
+.mediumspandiv {
+  display: flex;
+  justify-content: center;
+}
+
+.shortspan {
+  width: 870px;
+
+  display: block;
+}
+
+.shortspandiv {
+  display: flex;
+  justify-content: center;
+}
+
+.ultrashortdiv {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.ultrashortspan {
+  width: 860px;
+
+  display: block;
+}
+
+.linkedinicon {
+  height: 50px;
+  cursor: pointer;
+  fill: white;
+  transition: fill 0.5s ease; /* Add a transition effect for the color property */
+}
+
+.githubicon:hover,
+.linkedinicon:hover {
+  fill: #4b5563; /* Change the color on hover */
+
+  /* box-shadow: -2px -2px 30px pink; */
+}
+
+/* .aboutdivtwo {
+  background-color: teal;
+  width: 50%;
+  height: 100%;
+} */
+
+.introdiv {
+  /* font-size: 4rem; */
+  /* background-color: aqua; */
+  /* width: 100%; */
+  display: flex;
+  height: 100%;
+}
+
+.contactmebuttondiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contactmebuttondiv button {
+  height: 50px;
+  width: 200px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: box-shadow 0.5s ease; /* Add a transition effect for the color property */
+}
+
+.contactmebuttondiv button:hover {
+  box-shadow: -2px -2px 30px #f48fb1;
+}
+
+/* Contact Page */
+.contactsectionparent {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  /* outline: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactmeheader {
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contactform {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contactintrodiv {
+  display: flex;
+  height: 100%;
+}
+
+.submitbuttondiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.submitbuttondiv button {
+  height: 50px;
+  width: 200px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contactdiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 60px;
+  gap: 15px;
+}
+
+label {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 10px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 600px;
+}
+
+textarea {
+  height: 150px;
+  width: 600px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* portfolio css section */
+
+.portfolioparentdiv {
+  height: 100vh;
+  width: 100%;
+}
+
+.boxparent {
+  margin-top: 30px;
+  display: flex;
+  /* outline: 2px solid pink; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.box {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  height: 500px;
+  width: 400px;
+  /* outline: 2px solid #ffffff; */
+  background-color: #222222;
+  position: relative;
+  border-radius: 20px;
+}
+
+.appdescription {
+  margin-top: 10px;
+}
+
+.appdescription p {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.nameofapp {
+  color: pink;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.appimgbox {
+  height: 250px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+.appimgbox:hover {
+  /* box-shadow: -2px -2px 10px pink; */
+}
+
+.boximg {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.createdwithdiv {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.2rem;
+  color: pink;
+
+  position: absolute;
+  bottom: 30px;
+}
+
+@media (max-width: 1014px) {
+  .introwrapper {
+    display: none;
+  }
+
+  .mediaintrowrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mediaintro {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.4rem;
+    line-height: 40px;
+  }
+
+  .hello {
+    font-size: 2.5rem;
+  }
+
+  .contactmebuttondiv button {
+    height: 45px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 573px) {
+  .hello {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu {
+    gap: 50px;
+  }
+}
+@media (max-width: 378px) {
+  .menu {
+    gap: 25px;
+  }
+
+  .navbar {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 331px) {
+  .hello {
+    margin-top: 40px;
+  }
+}
+
+/* media query for contact form */
+@media (max-width: 650px) {
+  input {
+    width: 400px;
+  }
+
+  textarea {
+    width: 400px;
+  }
+}
+
+@media (max-width: 441px) {
+  input {
+    width: 300px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+}
