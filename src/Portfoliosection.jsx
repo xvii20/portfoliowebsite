@@ -15,10 +15,10 @@ export default function Portfoliosection() {
     >
       <div className="boxparent">
         <div className="box">
-          <div className="nameofapp"> Petsy </div>
+          <div className="nameofapp"> Illupets </div>
           <div className="appimgbox">
             <Link
-              to="https://github.com/xvii20" // replace with the actual netlify link of the Petsy project...
+              to="https://illupets.netlify.app/" // replace with the actual netlify link of the Illupets project...
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -29,7 +29,7 @@ export default function Portfoliosection() {
           <div className="appdescription">
             <p>
               {' '}
-              Petsy is an app where you can search for adopted pets in the
+              Illupets is an app where you can search for adopted pets in the
               United States. You can choose to contact the owners of the pets
               for more pet info, as well as adopting a pet from them{' '}
             </p>
@@ -38,10 +38,10 @@ export default function Portfoliosection() {
         </div>
 
         <div className="box">
-          <div className="nameofapp"> Weather App </div>
+          <div className="nameofapp"> Skylight </div>
           <div className="appimgbox">
             <Link
-              to="https://github.com/xvii20" // replace with the actual netlify link of the weather app project...
+              to="https://que-lily-c2f213.netlify.app/" // replace with the actual netlify link of the Skylight project...
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -52,7 +52,7 @@ export default function Portfoliosection() {
           <div className="appdescription">
             <p>
               Web app that allows you to type in a city in the input field and
-              then displays the 5 day weather forecast of that city.
+              then displays the 6 day weather forecast of that city.
             </p>
           </div>
           <div className="createdwithdiv"> #React #Typescript </div>
