@@ -37,7 +37,7 @@ export default function Contact() {
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(), // turns the code into something like name=dwfw&subject=fwaaaa&email=ya%40yahoo.com&message=z2rfuwffwfuwfwh
+      body: new URLSearchParams(formData).toString(), // turns the code into something like name=sara&subject=hello&email=ya%40yahoo.com&message=hi
     })
       .then(() => console.log('Form successfully submitted'))
       .catch((error) => alert(error));
