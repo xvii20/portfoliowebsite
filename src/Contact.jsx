@@ -146,7 +146,14 @@ export default function Contact() {
 
             <div className="submitbuttondiv">
               {' '}
-              <button type="submit">Submit</button>{' '}
+              <button
+                type="submit"
+                onClick={() => {
+                  navigate('/');
+                }}
+              >
+                Submit
+              </button>{' '}
             </div>
           </form>
         </div>

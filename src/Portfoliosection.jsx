@@ -1,7 +1,8 @@
 import React from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import petsy from './petsy-min.png';
 import weatherimg from './weatherimg-min.png';
+import { Link } from 'react-router-dom';
 
 export default function Portfoliosection() {
   return (
@@ -16,7 +17,14 @@ export default function Portfoliosection() {
         <div className="box">
           <div className="nameofapp"> Petsy </div>
           <div className="appimgbox">
-            <img src={petsy} className="boximg" />
+            <Link
+              to="https://github.com/xvii20" // replace with the actual netlify link of the Petsy project...
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              <img src={petsy} className="boximg" />{' '}
+            </Link>
           </div>
           <div className="appdescription">
             <p>
@@ -32,7 +40,14 @@ export default function Portfoliosection() {
         <div className="box">
           <div className="nameofapp"> Weather App </div>
           <div className="appimgbox">
-            <img src={weatherimg} className="boximg" />
+            <Link
+              to="https://github.com/xvii20" // replace with the actual netlify link of the weather app project...
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              <img src={weatherimg} className="boximg" />
+            </Link>
           </div>
           <div className="appdescription">
             <p>

@@ -41,7 +41,6 @@ export default function AboutSection() {
         </Link>
       </div>
 
-      {/* Your main content goes here */}
       <div className="introdiv">
         <div className="aboutdiv">
           {/* <div className="icons">
