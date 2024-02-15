@@ -133,7 +133,7 @@ export default function Contact() {
             <br />
 
             <div className="messagelabeldiv">
-              <label htmlFor="message">{t('message')}:</label>
+              <label htmlFor="message">{t('message')}</label>
             </div>
             <div className="messageinputdiv">
               <textarea
@@ -148,14 +148,7 @@ export default function Contact() {
 
             <div className="submitbuttondiv">
               {' '}
-              <button
-                type="submit"
-                onClick={() => {
-                  navigate('/');
-                }}
-              >
-                {t('submit')}
-              </button>{' '}
+              <button type="submit">{t('submit')}</button>{' '}
             </div>
           </form>
         </div>
