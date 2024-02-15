@@ -83,6 +83,7 @@ export default function Contact() {
             method="POST"
             // onSubmit={handleSubmit}
             // onSubmit="submit"
+            action="/" // this was added if this does not work remove
           >
             <input type="hidden" name="form-name" value="contactForm" />
 
