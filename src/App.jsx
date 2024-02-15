@@ -34,8 +34,8 @@ function Animatedroutes() {
           <Route path="/about" element={<Aboutsection />} />
           <Route path="/portfolio" element={<Portfoliosection />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/pages/success" element={<Successpage />} />
-        </Route>{' '}
+          <Route path="/success" element={<Successpage />} />
+        </Route>
         {/* see this self enclosing route tag?? */}
       </Routes>
     </AnimatePresence>

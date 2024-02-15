@@ -83,7 +83,7 @@ export default function Contact() {
             method="POST"
             // onSubmit={handleSubmit}
             // onSubmit="submit"
-            action="/" // this was added if this does not work remove
+            // action="/success" // this was added if this does not work remove. this is used to redirect to the url of your choice after submitting the form to a url. if you dont want to redirect remove this
           >
             <input type="hidden" name="form-name" value="contactForm" />
 
