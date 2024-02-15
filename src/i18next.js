@@ -41,6 +41,9 @@ i18next.use(initReactI18next).init({
         subject: 'Subject',
         message: 'Message',
         submit: 'Submit',
+        // success page translations
+        formsubmitted: 'Your Form has been submitted!',
+        goback: 'Back to Homepage',
       },
     },
     de: {
@@ -67,6 +70,9 @@ i18next.use(initReactI18next).init({
         subject: 'Betreff',
         message: 'Nachricht',
         submit: 'Abschicken',
+        // success page translations
+        formsubmitted: 'Das Formular wurde erfolgreich abgeschickt!',
+        goback: 'Zur Startseite',
       },
     },
   },

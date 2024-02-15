@@ -51,6 +51,7 @@ export default function Navbar() {
           className="languageselect"
           onChange={(e) => handlechangelng(e.target.value)}
           value={i18n.language}
+        
         >
           <option value="en" className="en">
             {' '}

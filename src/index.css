@@ -150,7 +150,7 @@ body {
 .languageselect {
   width: 85px;
   height: 30px;
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   outline: none;
   border: none;
@@ -580,20 +580,28 @@ textarea {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .successwrapper {
   font-size: 1.2rem;
   background-color: #222222;
   height: 200px;
-  width: 400px;
+  width: 480px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  border-radius: 7px;
+  margin-top: 150px;
+}
+
+.tohomepagebutton {
+  cursor: pointer;
+  margin-top: 10px;
+  height: 35px;
+  width: 170px;
 }
 
 @media (max-width: 500px) {
