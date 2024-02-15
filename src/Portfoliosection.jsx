@@ -39,7 +39,7 @@ export default function Portfoliosection() {
           <div className="nameofapp"> Skylight </div>
           <div className="appimgbox">
             <Link
-              to="https://que-lily-c2f213.netlify.app/" // replace with the actual netlify link of the Skylight project...
+              to="https://skyxlight127.netlify.app/" // replace with the actual netlify link of the Skylight project...
               target="_blank"
               rel="noopener noreferrer"
             >
