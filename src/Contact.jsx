@@ -76,15 +76,15 @@ export default function Contact() {
         <div className="contactform">
           <h1 className="contactmeheader"> {t('contactme')} </h1>
           <form
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            name="contact"
+            // data-netlify="true"
+            // data-netlify-honeypot="bot-field"
+            name="contactform"
             //  action="/"
-            method="post"
+            method="POST"
             // onSubmit={handleSubmit}
-            onSubmit="submit"
+            // onSubmit="submit"
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contactForm" />
 
             <div className="namelabeldiv">
               <label htmlFor="name">Name:</label>
@@ -109,10 +109,10 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                id="subject"
-                required
+                // value={formData.subject}
+                // onChange={handleChange}
+                // id="subject"
+                // required
               />
             </div>
             <br />
@@ -124,10 +124,10 @@ export default function Contact() {
               <input
                 type="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
-                id="email"
-                required
+                // value={formData.email}
+                // onChange={handleChange}
+                // id="email"
+                // required
               />
             </div>
             <br />
@@ -138,10 +138,10 @@ export default function Contact() {
             <div className="messageinputdiv">
               <textarea
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
-                id="message"
-                required
+                // value={formData.message}
+                // onChange={handleChange}
+                // id="message"
+                // required
               />
             </div>
             <br />
