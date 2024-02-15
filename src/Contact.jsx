@@ -4,8 +4,10 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
 import SvgComponent from './githubsvg';
 import LinkedinComponent from './linkedinsvg';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -72,7 +74,7 @@ export default function Contact() {
       <div className="contactsectionparent">
         {' '}
         <div className="contactform">
-          <h1 className="contactmeheader"> Contact Me </h1>
+          <h1 className="contactmeheader"> {t('contactme')} </h1>
           <form
             data-netlify="true"
             data-netlify-honeypot="bot-field"
@@ -100,7 +102,7 @@ export default function Contact() {
             <br />
 
             <div className="subjectlabeldiv">
-              <label htmlFor="subject">Subject:</label>
+              <label htmlFor="subject">{t('subject')}</label>
             </div>
 
             <div className="subjectinputdiv">
@@ -131,7 +133,7 @@ export default function Contact() {
             <br />
 
             <div className="messagelabeldiv">
-              <label htmlFor="message">Message:</label>
+              <label htmlFor="message">{t('message')}:</label>
             </div>
             <div className="messageinputdiv">
               <textarea
@@ -152,7 +154,7 @@ export default function Contact() {
                   navigate('/');
                 }}
               >
-                Submit
+                {t('submit')}
               </button>{' '}
             </div>
           </form>

@@ -144,6 +144,22 @@ body {
   font-size: 20px;
   font-weight: 900;
   padding-left: 20px;
+  position: relative;
+}
+
+.languageselect {
+  width: 70px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.togglelanguagediv {
+  position: absolute;
+  right: 10px;
 }
 
 .navbarele:hover {
@@ -228,7 +244,7 @@ body {
 
 .icondivincontactpage {
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 35px;
@@ -244,7 +260,13 @@ body {
 
 .hello {
   margin-bottom: 30px;
-  font-size: 45px;
+  font-size: 40px;
+  /* box-shadow: -2px -2px 30px pink; */
+}
+
+.hellode {
+  margin-bottom: 30px;
+  font-size: 40px;
   /* box-shadow: -2px -2px 30px pink; */
 }
 
@@ -265,17 +287,47 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.longspandivde {
+  display: flex;
+  justify-content: center;
+}
+
 .longspan {
   display: block;
   width: 1000px;
 }
+.longspande {
+  display: block;
+  width: 1000px;
+}
+
+.xlongspanfour,
+.xlongspanfive,
+.xlongspanthree,
+.xlongspantwo,
+.xlongspan,
+.xlongspansix {
+  display: flex;
+  justify-content: center;
+}
 
 .mediumspan {
   width: 930px;
-
   display: block;
 }
+
+.mediumspande {
+  width: 930px;
+  display: block;
+}
+
 .mediumspandiv {
+  display: flex;
+  justify-content: center;
+}
+
+.mediumspandivde {
   display: flex;
   justify-content: center;
 }
@@ -286,7 +338,18 @@ body {
   display: block;
 }
 
+.shortspande {
+  width: 870px;
+
+  display: block;
+}
+
 .shortspandiv {
+  display: flex;
+  justify-content: center;
+}
+
+.shortspandivde {
   display: flex;
   justify-content: center;
 }
@@ -298,7 +361,19 @@ body {
   text-align: center;
 }
 
+.ultrashortdivde {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .ultrashortspan {
+  width: 860px;
+
+  display: block;
+}
+
+.ultrashortspande {
   width: 860px;
 
   display: block;
@@ -520,6 +595,21 @@ textarea {
   gap: 20px;
 }
 
+@media (max-width: 500px) {
+  .navbarele {
+    font-size: 0.9rem;
+  }
+
+  .navbareleactive {
+    font-size: 0.9rem;
+  }
+
+  .languageselect {
+    height: 29px;
+    width: 43px;
+  }
+}
+
 @media (max-width: 1014px) {
   .introwrapper {
     display: none;
@@ -555,12 +645,12 @@ textarea {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 4320px) {
   .menu {
     gap: 50px;
   }
 }
-@media (max-width: 378px) {
+@media (max-width: 412px) {
   .menu {
     gap: 25px;
   }
@@ -570,9 +660,21 @@ textarea {
   }
 }
 
-@media (max-width: 331px) {
+@media (max-width: 356px) {
+  .menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
   .hello {
-    margin-top: 40px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 394px) {
+  .box {
+    height: 530px;
   }
 }
 

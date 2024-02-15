@@ -3,8 +3,11 @@ import { motion } from 'framer-motion';
 import petsy from './petsy-min.png';
 import weatherimg from './weatherimg-min.png';
 import { Link } from 'react-router-dom';
+import { useTranslation, initReactI18next } from 'react-i18next';
 
 export default function Portfoliosection() {
+  const { t, i18n } = useTranslation();
+
   return (
     <motion.div
       className="portfolioparentdiv"
@@ -27,12 +30,7 @@ export default function Portfoliosection() {
             </Link>
           </div>
           <div className="appdescription">
-            <p>
-              {' '}
-              Illupets is an app where you can search for adopted pets in the
-              United States. You can choose to contact the owners of the pets
-              for more pet info, as well as adopting a pet from them{' '}
-            </p>
+            <p> {t('illupetsdescription')}</p>
           </div>
           <div className="createdwithdiv"> #React </div>
         </div>
@@ -50,10 +48,7 @@ export default function Portfoliosection() {
             </Link>
           </div>
           <div className="appdescription">
-            <p>
-              Web app that allows you to type in a city in the input field and
-              then displays the 6 day weather forecast of that city.
-            </p>
+            <p>{t('skylightdescription')}</p>
           </div>
           <div className="createdwithdiv"> #React #Typescript </div>
         </div>
