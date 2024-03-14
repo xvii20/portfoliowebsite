@@ -5,6 +5,7 @@ import Portfoliosection from './Portfoliosection';
 import Contact from './Contact';
 import Layout from './Layout';
 import Successpage from './successpage';
+import SeparateAboutSection from './separateaboutsection';
 import {
   BrowserRouter,
   Routes,
@@ -31,7 +32,7 @@ function Animatedroutes() {
           {/* see this open arrow*/}
           <Route index element={<Aboutsection />} />
           <Route path="/" element={<Aboutsection />} />
-          <Route path="/about" element={<Aboutsection />} />
+          <Route path="/about" element={<SeparateAboutSection />} />
           <Route path="/portfolio" element={<Portfoliosection />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/success" element={<Successpage />} />

@@ -16,7 +16,17 @@ i18next.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
+        // separateaboutsection translations
+        skills: 'Developer Skills',
+        aboutmeseparate: `Hi! I am originally from America, and am currently living in Germany
+        since 2018. I have also been coding for 2 years now, and enjoy
+        designing websites and making apps. I like learning new things
+        everyday and believe self-improvement is important`,
+
+        // sidebar translation
+        home: 'Home',
         // about me page translations
+        languages: 'Languages',
         aboutme: 'About Me',
         contact: 'Contact',
         hellomessage: `Hello! 👋 I'm Laurence`,
@@ -34,9 +44,13 @@ i18next.use(initReactI18next).init({
         contactme: 'Contact Me',
         // portfolio page translations
         illupetsdescription:
-          'Illupets is an app where you can search for adopted pets in the United States. You can choose to contact the owners of the pets for more pet info, as well as adopting a pet from them',
+          'Illupets is a full-stack app where users can search for adopted pets in the United States. Users can also choose to contact the owners of the pets for more pet info, and favorite the pets that they like',
         skylightdescription:
-          'Skylight is a web app that allows you to type in a city in the input field and then displays the 6 day weather forecast of that city.',
+          'Skylight is a web app that allows users to type in a city in the input field and then displays the 6 day weather forecast of that city.',
+
+        luminescdescription:
+          'Luminesc is a full-stack app that users can create an account and are able to track their expenses.',
+
         // contact me page translations
         subject: 'Subject',
         message: 'Message',
@@ -48,7 +62,15 @@ i18next.use(initReactI18next).init({
     },
     de: {
       translation: {
+        // aboutmeseparate translations
+        skills: 'Fähigkeiten',
+        aboutmeseparate:
+          'Hallo! Ich komme ursprünglich aus Amerika und lebe seit 2018 in Deutschland. Seit 2 Jahren programmiere ich auch und habe Freude daran, Websites zu gestalten und Apps zu entwickeln. Ich lerne gerne jeden Tag neue Dinge und glaube, dass Selbstverbesserung wichtig ist.',
+
+        // sidebar translation
+        home: 'Startseite',
         // about me page translations
+        languages: 'Sprachen',
         aboutme: 'Über mich',
         contact: 'Kontakt',
         hellomessage: 'Hallo! 👋 Ich bin Laurence',
@@ -60,12 +82,15 @@ i18next.use(initReactI18next).init({
         Und das Bekenntnis, immer auf dem neuesten Stand der Technologie zu bleiben`,
         mediaintro:
           'Ich bin ein leidenschaftlicher und engagierter Webentwickler mit einem Talent dafür, Ideen in die Realität umzusetzen. Meine Reise in die Welt des Programmierens wird von einer tiefen Liebe für das Erschaffen von Dingen angetrieben, die nicht nur nahtlos funktionieren, sondern auch einen bleibenden Eindruck hinterlassen. Ich gedeihe an den Herausforderungen der Webentwicklung und bin entschlossen, stets auf dem neuesten Stand der Technologie zu bleiben.',
-        contactme: 'Kontaktieren',
+        contactme: 'Kontakt Aufnehmen',
         // portfolio page translations
         illupetsdescription:
-          'Illupets ist eine App, in der Sie nach adoptierten Haustieren in den Vereinigten Staaten suchen können. Sie können wählen, die Besitzer der Haustiere für weitere Informationen zu kontaktieren.',
+          'Illupets ist eine Full-Stack-App, mit der Sie nach adoptierten Haustieren in den Vereinigten Staaten suchen können. Sie können wählen, die Besitzer der Haustiere für weitere Informationen zu den Haustieren zu kontaktieren und die Haustiere, die Ihnen gefallen, als Favoriten zu markieren',
         skylightdescription:
           'Skylight ist eine Web-App, die es Ihnen ermöglicht, den Namen einer Stadt in das Eingabefeld einzugeben und dann die 6-Tage-Wettervorhersage für diese Stadt anzuzeigen.',
+
+        luminescdescription:
+          'Luminesc ist eine Full-Stack-App, mit der Benutzer ein Konto erstellen und ihre Ausgaben verfolgen können.',
         // contact me page translations
         subject: 'Betreff',
         message: 'Nachricht',

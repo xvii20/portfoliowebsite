@@ -133,6 +133,39 @@ body {
   font-family: Lato, sans-serif;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding: 5px;
+  display: none;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for smoother animation */
+  margin: 4px 0; /* Add margin to space out the lines */
+}
+
+.open .line:nth-child(1) {
+  transform: rotate(46deg) translate(7px, 7px);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -8px);
+}
+
 /* Navbar css */
 .navbar {
   background-color: #1c1917;
@@ -145,6 +178,11 @@ body {
   font-weight: 900;
   padding-left: 20px;
   position: relative;
+}
+
+.en {
+  color: red;
+  margin-top: 100px;
 }
 
 .languageselect {
@@ -160,7 +198,13 @@ body {
 
 .togglelanguagediv {
   position: absolute;
-  right: 10px;
+  right: 25px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.languageselect.expanded {
+  padding-top: 50px;
 }
 
 .navbarele:hover {
@@ -170,7 +214,7 @@ body {
 
 .menu {
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 
 .menu span {
@@ -187,6 +231,37 @@ body {
   font-size: 1.1rem;
 }
 
+.hamburgernavbareleactive {
+  color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid pink; /* Pink 200 */
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.hamburgernavbareleactive:hover {
+  color: black;
+}
+
+.hamburgernavbarele {
+  padding-top: 3px;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.stacksidebar:hover {
+  color: black !important;
+  background-color: #fff;
+}
+
+.hamburgernavbarele:hover {
+  color: black;
+}
+
 .navbarele {
   padding-top: 3px;
   color: #ffffff; /* White text for contrast */
@@ -196,6 +271,11 @@ body {
 }
 
 /* About section css */
+
+.skilllist li {
+  margin-top: 10px;
+  list-style-type: disc;
+}
 
 .aboutsectionparent {
   height: 100vh;
@@ -214,7 +294,7 @@ body {
 }
 
 .introwrapper {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   /* margin-bottom: 700px; */
   color: white;
 }
@@ -414,18 +494,18 @@ body {
   margin-top: 40px;
 }
 
-.contactmebuttondiv button {
+/* .contactmebuttondiv button {
   height: 50px;
   width: 200px;
   font-size: 1.2rem;
   cursor: pointer;
   margin-right: 20px;
-  transition: box-shadow 0.5s ease; /* Add a transition effect for the color property */
-}
+  transition: box-shadow 0.5s ease;
+} */
 
-.contactmebuttondiv button:hover {
+/* .contactmebuttondiv button:hover {
   box-shadow: -2px -2px 30px #f48fb1;
-}
+} */
 
 /* Contact Page */
 .contactsectionparent {
@@ -515,13 +595,14 @@ textarea {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 20px;
 }
 .box {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
-  height: 500px;
+  height: 600px;
   width: 400px;
   /* outline: 2px solid #ffffff; */
   background-color: #222222;
@@ -569,9 +650,13 @@ textarea {
   font-size: 1.2rem;
   color: pink;
 
-  position: absolute;
-  bottom: 30px;
+  /* position: absolute;
+  bottom: 80px; */
 }
+
+/* .luminescbackendlink:hover {
+  color: blue;
+} */
 
 /* successpage css*/
 
@@ -640,9 +725,9 @@ textarea {
 }
 
 @media (max-width: 1014px) {
-  .introwrapper {
+  /* .introwrapper {
     display: none;
-  }
+  } */
 
   .mediaintrowrapper {
     display: flex;
@@ -662,10 +747,10 @@ textarea {
     font-size: 2.5rem;
   }
 
-  .contactmebuttondiv button {
+  /* .contactmebuttondiv button {
     height: 45px;
     margin-right: 20px;
-  }
+  } */
 }
 
 @media (max-width: 573px) {
@@ -674,24 +759,9 @@ textarea {
   }
 }
 
-@media (max-width: 4320px) {
-  .menu {
-    gap: 50px;
-  }
-}
 @media (max-width: 412px) {
-  .menu {
-    gap: 25px;
-  }
-
   .navbar {
     padding-left: 15px;
-  }
-}
-
-@media (max-width: 356px) {
-  .menu {
-    gap: 20px;
   }
 }
 
@@ -701,9 +771,23 @@ textarea {
   }
 }
 
-@media (max-width: 394px) {
+@media (max-width: 443px) {
   .box {
-    height: 530px;
+    height: 650px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 393px) {
+  .box {
+    height: 700px;
+  }
+}
+
+@media (max-width: 393px) {
+  .box {
+    height: 700px;
   }
 }
 
@@ -725,5 +809,21 @@ textarea {
 
   textarea {
     width: 300px;
+  }
+}
+
+@media (max-width: 813px) {
+  .menu {
+    display: none;
+  }
+
+  .togglelanguagediv {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    position: absolute;
+    color: white;
   }
 }
