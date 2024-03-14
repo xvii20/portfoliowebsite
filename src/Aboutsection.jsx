@@ -35,6 +35,20 @@ export default function AboutSection() {
   //   setHasPageLoaded(true);
   // }, []);
 
+  useEffect(() => {
+    const disableScroll = () => {
+      //this prevents scrolling on the entire page
+      document.body.style.overflowY = 'hidden';
+    };
+
+    disableScroll();
+
+    // Remove the event listener when the component unmounts, so scroll will be activated when component unmounts
+    return () => {
+      document.body.style.overflowY = 'auto'; // Re-enable scrolling
+    };
+  }, []);
+
   return (
     <motion.div
       className="aboutsectionparent"
