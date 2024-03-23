@@ -5,7 +5,7 @@ import { useLocation, Link, useNavigate } from 'react-router-dom';
 import SvgComponent from './githubsvg';
 import LinkedinComponent from './linkedinsvg';
 import { useTranslation } from 'react-i18next';
-
+import { Button } from '@mui/material';
 export default function Contact() {
   const { t, i18n } = useTranslation();
   const location = useLocation();
@@ -62,13 +62,13 @@ export default function Contact() {
           <SvgComponent className="githubicon" />
         </Link>
 
-        <Link
+        {/* <Link
           to="https://www.linkedin.com/in/laurence-lim-636b032aa/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <LinkedinComponent className="linkedinicon" />
-        </Link>
+        </Link> */}
       </div>
 
       <div className="contactsectionparent">
@@ -148,7 +148,21 @@ export default function Contact() {
 
             <div className="submitbuttondiv">
               {' '}
-              <button type="submit">{t('submit')}</button>{' '}
+              {/* <button type="submit">{t('submit')}</button>{' '} */}
+              <Button
+                variant="contained"
+                type="submit"
+                color="secondary"
+                // sx={{
+                //   // backgroundColor: '',
+                //   '&:hover': {
+                //     backgroundColor: 'rgb(106, 27, 154)', // Darker background color on hover
+                //   },
+                //   borderRadius: '4px',
+                // }}
+              >
+                {t('submit')}
+              </Button>
             </div>
           </form>
         </div>

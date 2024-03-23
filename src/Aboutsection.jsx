@@ -62,7 +62,7 @@ export default function AboutSection() {
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'row',
-          marginTop: '120px',
+          marginTop: '140px',
           marginBottom: '20px',
         }}
       >
@@ -83,7 +83,7 @@ export default function AboutSection() {
           <GitHubIcon sx={{ color: 'white', fontSize: '2.3rem' }} />
         </IconButton>
 
-        <IconButton
+        {/* <IconButton
           aria-label="linkedin"
           onClick={() => {
             window.location.href =
@@ -94,7 +94,7 @@ export default function AboutSection() {
           <LinkedInIcon
             sx={{ color: 'white', fontSize: '2.5rem', paddingTop: '3px' }}
           />
-        </IconButton>
+        </IconButton> */}
 
         {/* <Link
           to="https://www.linkedin.com/in/laurence-lim-636b032aa/"

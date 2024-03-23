@@ -158,6 +158,9 @@ export default function SeparateAboutSection() {
                 '@media (max-width: 621px)': {
                   display: 'none',
                 },
+                '@media (max-height: 689px)': {
+                  paddingBottom: '20px',
+                },
               }}
             >
               <ul className="skilllist">
