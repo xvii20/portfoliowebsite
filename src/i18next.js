@@ -18,8 +18,8 @@ i18next.use(initReactI18next).init({
       translation: {
         // separateaboutsection translations
         skills: 'Developer Skills',
-        aboutmeseparate: `Hi! I am originally from America, and am currently living in Germany
-        since 2018. I have also been coding for 2 years now, and enjoy
+        aboutmeseparate: `Hi! I am originally from America, and am currently located in Piscataway
+        New Jersey. I have also been coding for 2 years now, and enjoy
         designing websites and making apps. I like learning new things
         everyday and believe self-improvement is important`,
 
@@ -65,7 +65,7 @@ i18next.use(initReactI18next).init({
         // aboutmeseparate translations
         skills: 'Fähigkeiten',
         aboutmeseparate:
-          'Hallo! Ich komme ursprünglich aus Amerika und lebe seit 2018 in Deutschland. Seit 2 Jahren programmiere ich auch und habe Freude daran, Websites zu gestalten und Apps zu entwickeln. Ich lerne gerne jeden Tag neue Dinge und glaube, dass Selbstverbesserung wichtig ist.',
+          'Hallo! Ich komme ursprünglich aus Amerika und befinde mich derzeit in Piscataway, New Jersey. Seit 2 Jahren programmiere ich auch und habe Freude daran, Websites zu gestalten und Apps zu entwickeln. Ich lerne gerne jeden Tag neue Dinge und glaube, dass Selbstverbesserung wichtig ist.',
 
         // sidebar translation
         home: 'Startseite',
